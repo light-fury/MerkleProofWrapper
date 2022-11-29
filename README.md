@@ -4,7 +4,16 @@ These functions deal with verification of Merkle Tree proofs.
 * The proofs can be generated using the JavaScript library <br>
 https://github.com/miguelmota/merkletreejs.
 * Note: The hashing algorithm should be keccak256 and pair sorting should be enabled.
+* Note: This contract is not a standalone contract. This will work like a library contract.
 
+Here is the usage of the library.<br>
+https://forum.openzeppelin.com/t/how-to-use-merkleproof-library/2818/2 <br>
+And here's another usage of it.<br>
+https://medium.com/codex/using-merkle-trees-for-smart-contracts-24ccf6f75a0a <br>
+
+With this MerkleProofWrapper, we can do like this. <br>
+`MerkleProofWrapper(address _merkleProofWrapperAddress).verify(_merkleProof, root, leaf)` <br>
+By doing this, we can reduce the size of the contract deployed.
 
 ## Overview
 
